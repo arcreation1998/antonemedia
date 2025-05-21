@@ -124,3 +124,10 @@ footer {
 .social-links a:hover {
   text-decoration: underline;
 }
+/* Contact Section iframe */
+.contact-section iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 1000px; /* Adjust height if needed */
+  border: none;
+}
