@@ -1,0 +1,126 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Colors */
+:root {
+  --primary-color: #4056A1;
+  --secondary-color: #FFD662;
+  --bg-light: #F5F5F5;
+  --bg-dark: #2E2E2E;
+  --text-dark: #000;
+  --text-light: #FFF;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+.quote-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+.hero-buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.learn-button {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Services Section */
+.services-section {
+  padding: 2rem;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  padding: 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.social-links a {
+  margin: 0 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
