@@ -1,18 +1,20 @@
 backend:
-  name: github
-  repo: arcreation1998/antonemedia
-  branch: main
+  name: git-gateway
+  auth_type: oauth2
+  auth_endpoint: https://arcreationmedia.us.auth0.com/authorize
+  client_id: YOUR_AUTH0_CLIENT_ID
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://arcreation1998.github.io/antonemedia"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "index.html"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
